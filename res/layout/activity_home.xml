@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/AppBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_view">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/topAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#0000"
+                app:navigationIcon="@drawable/ic_baseline_menu_24"
+                app:subtitleTextColor="@color/colortextfirst"
+                app:title="Examaster"
+                app:titleTextColor="@color/colortextsecond" />
+
+
+            <FrameLayout
+                android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AppBar"
+                android:background="@color/colorPrimaryDark">
+
+            </FrameLayout>
+
+            <ScrollView
+                android:id="@+id/Scrol07"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:visibility="visible"
+                tools:context=".MainActivity">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="330dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        app:cardBackgroundColor="@color/colorPrimaryDark"
+                        app:cardCornerRadius="25dp">
+
+                        <com.smarteist.autoimageslider.SliderView
+                            android:id="@+id/image_slider"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            app:sliderAnimationDuration="500"
+                            app:sliderAutoCycleDirection="back_and_forth"
+                            app:sliderAutoCycleEnabled="true"
+                            app:sliderIndicatorAnimationDuration="600"
+                            app:sliderIndicatorGravity="center_horizontal|bottom"
+                            app:sliderIndicatorMargin="15dp"
+                            app:sliderIndicatorOrientation="horizontal"
+                            app:sliderIndicatorPadding="3dp"
+                            app:sliderIndicatorRadius="2dp"
+                            app:sliderIndicatorSelectedColor="#15c55d"
+                            app:sliderIndicatorUnselectedColor="#dc4036"
+                            app:sliderScrollTimeInSec="2"
+                            app:sliderStartAutoCycle="true" />
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:id="@+id/surface"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#00000000"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/line1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="#00000000"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:foreground="@drawable/backgroundbox"
+                                app:cardBackgroundColor="#00000000"
+                                app:cardCornerRadius="8dp"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:foreground="@drawable/backgroundbox"
+                                app:cardBackgroundColor="#00000000"
+                                app:cardCornerRadius="8dp"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:foreground="@drawable/backgroundbox"
+                                app:cardBackgroundColor="#00000000"
+                                app:cardCornerRadius="8dp"
+                                tools:ignore="SpeakableTextPresentCheck" />
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <LinearLayout
+                            android:id="@+id/line2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="#00000000"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:foreground="@drawable/backgroundbox"
+                                app:cardBackgroundColor="#00000000"
+                                app:cardCornerRadius="8dp"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:foreground="@drawable/backgroundbox"
+                                app:cardBackgroundColor="#00000000"
+                                app:cardCornerRadius="8dp"
+                                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:foreground="@drawable/backgroundbox"
+                                app:cardBackgroundColor="#00000000"
+                                app:cardCornerRadius="8dp"
+                                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundGravity="bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_nav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/colorPrimary"
+                app:itemIconTint="@color/colortextfirst"
+                app:itemTextColor="@color/colortextfirst"
+                app:menu="@menu/bottome_menu">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="bottom|top"
+                    android:background="@color/color_view"
+                    android:orientation="horizontal" />
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#16171B"
+        android:visibility="visible"
+        app:headerLayout="@layout/nav_header"
+        app:itemIconTint="@color/colorAccent"
+        app:itemTextColor="@color/colortextfirst"
+        app:menu="@menu/my_navigation_items">
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
